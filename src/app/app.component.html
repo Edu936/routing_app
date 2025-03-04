@@ -7,6 +7,9 @@
     <li>
       <a routerLink="/about" routerLinkActive="active">About</a>
     </li>
+    <li>
+      <a [routerLink]="['/profile', 5]" routerLinkActive="active">profile</a>
+    </li>
   </ul>
 </nav>
 <router-outlet></router-outlet>
