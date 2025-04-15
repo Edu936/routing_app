@@ -1,15 +1,9 @@
-<h1>Angular {{ title }}</h1>
+<h1> {{title}} </h1>
 <nav>
   <ul>
-    <li>
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-    </li>
-    <li>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-    </li>
-    <li>
-      <a [routerLink]="['/profile', 5]" routerLinkActive="active">profile</a>
-    </li>
+    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+    <li><a [routerLink]="['/profile/'+'sadfnndfjnj']" routerLinkActive="active" ariaCurrentWhenActive="page">Profile</a></li>
   </ul>
 </nav>
 <router-outlet></router-outlet>
