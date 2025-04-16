@@ -11,6 +11,6 @@ export class HomeComponent {
   name = 'teste';
   private readonly _router = inject(Router);
   teste() {
-    this._router.navigate(['person', {name}]);
+    this._router.navigate(['person',  this.name]);
   }
 }
